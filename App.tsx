@@ -1,17 +1,19 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import ListPage from './src/screens/ListPage';
+import ListaPaises from './src/screens/ListaPaises';
+
+
 const Stack = createNativeStackNavigator();
 
 function App(): JSX.Element {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="ListPage" component={ListPage}/>
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+    return (
+        <NavigationContainer>
+            <Stack.Navigator>
+                <Stack.Screen name="ListaPaises" component={ListaPaises} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
 }
 
 export default App;
